@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LSchedule.Pages.Page_Favorites"
+             Title="Избранное"
+             >
+    <ContentPage.Content>
+        <AbsoluteLayout
+            x:Name="rootT"
+            >
+
+            <ScrollView
+                x:Name="Favorites_ScrollView"
+                >
+                <StackLayout
+                VerticalOptions="Center"
+                x:Name="Favorites_StackLayout"
+                >
+                </StackLayout>
+            </ScrollView>
+            
+            <Button
+                x:Name="button_Add"
+                Text="Добавить"
+                BackgroundColor="#306de5"
+                BorderColor="Black"
+                BorderWidth="1"
+                TextColor="BlanchedAlmond"
+                TextTransform="Uppercase"
+                Clicked="Show_Popup_AddFavorite"
+            />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

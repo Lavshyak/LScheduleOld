@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LSchedule.Pages.Page_WatchSchedule"
+             Title="Расписание"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <!--расписание-->
+            <ScrollView
+                Padding="20,0,0,0"
+                HorizontalScrollBarVisibility="Never"
+                VerticalScrollBarVisibility="Always"
+                Orientation="Vertical"
+                VerticalOptions="Fill"
+                >
+                <StackLayout
+                    VerticalOptions="EndAndExpand"
+                    x:Name="CurrentSchedule_StackLayout"
+                    >
+
+                </StackLayout>
+
+            </ScrollView>
+
+            <!--пикер с параметрами расписания-->
+            <Picker
+                VerticalOptions="EndAndExpand"
+                x:Name="picker_ScheduleParams"
+                SelectedIndexChanged="picker_ScheduleParams_SelectedIndexChanged"
+                HorizontalTextAlignment="Center"
+                >
+
+            </Picker>
+
+            <!--скролвью с кнопками дней-->
+            <ScrollView
+                Padding="20,0,0,0"
+                HorizontalScrollBarVisibility="Always"
+                VerticalScrollBarVisibility="Never"
+                Orientation="Horizontal"
+                VerticalOptions="End"
+                >
+                <StackLayout
+                VerticalOptions="EndAndExpand"
+                Orientation="Horizontal"
+                x:Name="Buttons_DaysOfWeek"
+                Spacing="1"
+                >
+                </StackLayout>
+            </ScrollView>
+
+            <Label x:Name="chetnNow" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

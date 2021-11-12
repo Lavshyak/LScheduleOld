@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LSchedule.Pages.Additional.Popup_AddFavorite"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             >
+    <StackLayout
+        Orientation="Vertical"
+        BackgroundColor="White"
+        x:Name='_root_StackLayout'
+        >
+
+
+
+    </StackLayout>
+</pages:PopupPage>
